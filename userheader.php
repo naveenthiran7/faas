@@ -1,0 +1,83 @@
+<?php
+session_start();
+if(!isset($_SESSION['userid'])) {
+    header("Location:index.php");
+}
+?>
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Clothing for Men & Women</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+		<!-- //Owl Carousel Assets -->
+		<!-----768px-menu----->
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+		<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+			
+		<!-----//768px-menu----->
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.php">
+				<img src="images/lg.png" alt=""/>
+				<h1>FASHION SHOP</h1>
+				<div class="clear"> </div>
+			 </a>
+		</div>
+		<div class="text">
+		  <p>Latest Trends in Fashion</p>
+		</div>
+		<div class="clear"> </div>
+	</div>
+</div>
+</div>
+<!-- start header -->
+<div class="header_btm">
+	<div class="wrap">
+		<!------start-768px-menu---->
+			<div id="page">
+					<div id="header">
+						<a class="navicon" href="#menu-left"> </a>
+					</div>
+					<nav id="menu-left">
+						
+					</nav>
+			</div>
+		<!------start-768px-menu---->
+			<div class="header_sub">
+				<div class="h_menu">
+					<ul>
+						<li class="active"><a href="userhome.php">Home</a></li>
+                                                <li><a href="mycart.php">My Cart</a></li>
+                                                <li><a href="mypurchase.php">My Purchase</a></li>
+                                                <li><a href="signout.php">Signout</a></li>
+					</ul>
+				</div>
+				<div class="h_search">
+		    		<form>
+		    			<input type="text" value="" placeholder="" readonly>
+		    			<!--input type="submit" value=""-->
+		    		</form>
+				</div>
+				<div class="clear"> </div>
+			</div>
+	</div>
+</div>
+<div class="simple-text">
+    <div class="wrap" style="min-height: 600px;">                                                                                          <!--h4>LOGIN</h4-->
+	<?php
+	include './db.php';
+	?>
